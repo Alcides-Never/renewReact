@@ -1,4 +1,6 @@
 import "./style.css"
+import logo from "../../assets/img/logo.svg"
+
 
 function Header() {
     
@@ -28,7 +30,7 @@ function Header() {
     return (
         <>
             <div id="sombra" />
-            <header>
+            <header id="header">
                 <div className="container header_conteudo">
                     {/* <a class="menu_barras" href="#"><img onclick="mostrarMenu()" src="../Imagens/Menu de barras.svg" alt=""></a> */}
                     {/* Acessibilidade ARIA
@@ -49,7 +51,7 @@ function Header() {
                     >
                         <div className="barras" />
                     </a>
-                    <img className="header_logo" src="../img/logo.svg" alt="" />
+                    <img className="header_logo" src={ logo } alt="" />
                     <nav>
                         <div id="menu_links" className="menu_links">
                             <a href="../Home/index.html">home</a>

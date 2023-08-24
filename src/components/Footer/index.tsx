@@ -1,12 +1,20 @@
 import "./style.css"
 
+import dev from "../../assets/img/dev.png"
+import logo from "../../assets/img/logo.svg"
+import facebook from "../../assets/img/facebook.svg"
+import instagram from "../../assets/img/instagram.svg"
+import linkedin from "../../assets/img/linkedin.svg"
+
+
 function Footer() {
     return (
         <>
-            <footer>
+            <footer id="footer">
                 <div className="container rodape">
                     <div className="span_dicas">
-                        <img src="../img/dev.png" alt="" />
+                        {/* <img src="../../assets/img/dev.png" alt="" /> */}
+                        <img src= { dev } alt="" />
                         <div className="span_dicas_texto">
                             <p>
                                 Temos algumas dicas para o seu serviço ou freela ser um sucesso,
@@ -28,18 +36,18 @@ function Footer() {
                                 <li>Cadastrar Desenvolvedor</li>
                             </ul>
                         </div>
-                        <img src="../img/logo.svg" alt="" />
+                        <img src={ logo } alt="" />
                         <div className="rodape_conteudo_contatos">
                             <h2>Contatos</h2>
                             <div>
                                 <a href="#">
-                                    <img src="../img/facebook.svg" alt="" />
+                                    <img src={ facebook } alt="" />
                                 </a>
                                 <a href="#">
-                                    <img src="../img/instagram.svg" alt="" />
+                                    <img src={ instagram } alt="" />
                                 </a>
                                 <a href="#">
-                                    <img src="../img/linkedin.svg" alt="" />
+                                    <img src={ linkedin } alt="" />
                                 </a>
                             </div>
                             <a href="mailto:">contato@vsconnect.com</a>
